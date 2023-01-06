@@ -1,11 +1,12 @@
 
 //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
+require("dotenv").config();
 
 const express =require('express')
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     organization: "org-Qj0r7qOLyfaxtVpw4YYubi9I",
-    apiKey:"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",
+    apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
