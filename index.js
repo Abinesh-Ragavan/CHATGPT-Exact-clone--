@@ -1,11 +1,11 @@
 
-//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
+//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
 
 const express =require('express')
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     organization: "org-Qj0r7qOLyfaxtVpw4YYubi9I",
-    apiKey:"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",
+    apiKey:"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",
 });
 const openai = new OpenAIApi(configuration);
 
