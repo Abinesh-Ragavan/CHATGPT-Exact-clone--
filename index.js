@@ -17,6 +17,11 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 const port =3080;
+app.get('/', async (req, res) => {
+  res.status(200).send({
+    message: 'Hello from CodeX!'
+  })
+})
 
 
 app.post('/',async(req,res)=>{
