@@ -4,7 +4,7 @@ const express =require('express')
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     organization: "org-Qj0r7qOLyfaxtVpw4YYubi9I",
-    apiKey:"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",
+    apiKey:"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",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -17,6 +17,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 const port =3080;
+
 app.get('/', async (req, res) => {
   res.status(200).send({
     message: 'Hello from CodeX!'
